@@ -1,0 +1,245 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* ------------------- Candidate Page ------------------- */
+  .candidate-page {
+    position: relative;
+    padding: 30px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 40px;
+    line-height: 1.6;
+    background-image: url('./assets/candidate-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .candidate-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.80); /* Match assessment-page */
+    z-index: 0;
+  }
+
+  .candidate-page > * {
+    position: relative;
+    z-index: 1;
+    max-width: 2500px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(15, 219, 192, 0.464); /* Match assessment-page */
+    backdrop-filter: blur(100px); /* Frosted glass effect */
+    border-radius: 16px;
+  }
+
+  /* Other candidate-page styles remain unchanged */
+  .candidate-page h1 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 40px;
+  }
+
+  .candidate-page p {
+    color: #003681;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .candidate-page .input,
+  .candidate-page select {
+    font-size: 40px;
+    padding: 18px 14px;
+    border-radius: 16px;
+    border: 2px solid #d1d5db64;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .candidate-page button,
+  .candidate-page .btn.btn-secondary,
+  .candidate-page .cta-button {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+  }
+
+  .candidate-page button {
+    font-size: 45px;
+    padding: 14px 29px;
+    border-radius: 10px;
+    background-color: #bde2c499;
+  }
+
+  .candidate-page .btn.btn-secondary {
+    font-size: 50px !important;
+    padding: 14px 20px !important;
+    border-radius: 10px !important;
+    background-color: #eafe37;
+  }
+
+  .candidate-page .cta-button {
+    font-size: 40px;
+    padding: 16px 24px;
+    border-radius: 12px;
+    background-color: #ffe972;
+  }
+
+  /* ------------------- Jobs Page ------------------- */
+  .jobs-page {
+    position: relative;
+    padding: 30px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 26px;
+    line-height: 1.6;
+    background-image: url('./assets/jobs-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .jobs-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.80); /* Match assessment-page */
+    z-index: 0;
+  }
+
+  .jobs-page > * {
+    position: relative;
+    z-index: 1;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 39px;
+    background: rgba(15, 219, 191, 0.316); /* Match assessment-page */
+    backdrop-filter: blur(12px); /* Frosted glass effect */
+    border-radius: 16px;
+  }
+
+  /* Other jobs-page styles remain unchanged */
+  .jobs-page h1 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 40px;
+  }
+
+  .jobs-page p {
+    color: #4B5563;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .jobs-page .input,
+  .jobs-page select {
+    font-size: 40px;
+    padding: 16px 14px;
+    border-radius: 16px;
+    border: 2px solid #D1D5DB;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .jobs-page button,
+  .jobs-page .cta-button {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+  }
+
+  .jobs-page button {
+    font-size: 36px;
+    padding: 14px 20px;
+    border-radius: 20px;
+    background-color: #bde2c4;
+  }
+
+  .jobs-page .cta-button {
+    font-size: 35px;
+    padding: 16px 24px;
+    border-radius: 14px;
+    background-color: #e5d310;
+  }
+
+  /* ------------------- Assessment Page ------------------- */
+  .assessment-page {
+    position: relative;
+    padding: 50px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 1.8;
+    background-image: url('./assets/assessment-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .assessment-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.80);
+    z-index: 0;
+  }
+
+  .assessment-page > * {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(15, 219, 191, 0.316);
+    border-radius: 30px;
+    padding: 30px;
+  }
+
+  .assessment-page h1 {
+    font-size: 120px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 50px;
+  }
+
+  .assessment-page p {
+    color: #4B5563;
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+
+  .assessment-page .input,
+  .assessment-page select {
+    font-size: 30px;
+    padding: 20px 16px;
+    border-radius: 16px; /* Fixed invalid 'px' value */
+    border: 2px solid #768192;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .assessment-page button,
+  .assessment-page .cta-button {
+    position: relative;
+    z-index: 2;
+  }
+
+  .assessment-page button {
+    font-size: 30px;
+    padding: 16px 24px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+  }
+
+  .assessment-page .cta-button {
+    font-size: 35px;
+    padding: 20px 28px;
+    border-radius: 20px;
+    background-color: #ffe600;
+  }
+}

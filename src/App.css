@@ -1,0 +1,227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- FONT IMPORT (public path for Vercel) --- */
+@font-face {
+  font-family: 'Rhinos';
+  src: url('/assets/fonts/Rhinos-Regular.woff2') format('woff2'),
+       url('/assets/fonts/Rhinos-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ========================
+   NAVBAR
+======================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+/* TOP ICONS */
+.navbar-top {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.icon-btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.profile-badge {
+  width: 60px;
+  height: 60px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #FFC107;
+  color: black;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.profile-badge:hover {
+  transform: scale(1.05);
+}
+
+/* BOTTOM ROW */
+.navbar-bottom {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  z-index: 20;
+}
+
+.navbar-bottom img {
+  width: 120px;
+  height: 120px;
+}
+
+.navbar-bottom h1 {
+  font-size: 3.5rem;
+  color: white;
+  font-family: 'Rhinos', sans-serif;
+}
+
+/* SEARCH BAR */
+.navbar-search {
+  width: 50%;
+  max-width: 700px;
+  height: 60px;
+}
+
+.navbar-input {
+  width: 100%;
+  height: 100%;
+  padding: 0 1.5rem;
+  font-size: 1.4rem;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+}
+
+/* ========================
+   TALENTFLOW HEADING
+======================== */
+.talentflow-heading {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Rhinos', sans-serif;
+  font-size: 5rem;
+  color: white;
+  text-shadow: 0 0 15px #d0ff00, 0 0 20px #1956ff, -2px -2px 0 #000;
+  text-align: center;
+}
+
+.talentflow-subtitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(255, 235, 59, 0.5);
+}
+
+/* ========================
+   HERO SECTION
+======================== */
+.hero-section {
+  position: relative;
+  height: 80vh;
+  background-image: url('/assets/lake.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* HERO TABS */
+.hero-tab-panel {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  background-color: white;
+  border-radius: 50px;
+  padding: 1rem 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+}
+
+.hero-tab-panel .hero-tab {
+  font-size: 1.8rem;
+  margin: 0 1rem;
+  cursor: pointer;
+  color: #374151;
+}
+
+.hero-tab-active {
+  background-color: #fde68a;
+  border-radius: 30px;
+  padding: 0.5rem 1.2rem;
+  color: black;
+  font-weight: 600;
+}
+
+/* ========================
+   CTA SECTION
+======================== */
+.cta-section {
+  margin-top: 200px;
+  background-color: #4cc6ca78;
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.cta-section::before,
+.cta-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-image: url('/assets/bingo.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+}
+
+.cta-section::before {
+  left: 0;
+}
+
+.cta-section::after {
+  right: 0;
+}
+
+.cta-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.cta-subtitle {
+  font-size: 2rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  background-color: #52afd7;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #00255F;
+}
