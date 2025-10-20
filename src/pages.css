@@ -11,7 +11,7 @@
     margin: 0 auto;
     font-size: 40px;
     line-height: 1.6;
-    background-image: url('./assets/candidate-bg.jpg');
+    background-image: url('/assets/candidate-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -97,7 +97,7 @@
     margin: 0 auto;
     font-size: 26px;
     line-height: 1.6;
-    background-image: url('./assets/jobs-bg.jpg');
+    background-image: url('/assets/jobs-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -176,7 +176,7 @@
     margin: 0 auto;
     font-size: 30px;
     line-height: 1.8;
-    background-image: url('./assets/assessment-bg.jpg');
+    background-image: url('/assets/assessment-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
